@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void){
+	printf("Taking a as 1, b as 0, d as 1, input c:");
+	printf("Enter a number greater than 1");
+	int a=1;
+	int b=0;
+
+	printf("%d\n", a&b);
+	printf("%d\n", a&&b);
+
+	int c; //using when variables are not binary
+	scanf("%d", &c);
+	int d=1;
+	printf("%d\n",c&d); // 8 & 1 --> 8 is 1000 so 0 & 1 gives 0
+
+	printf("%d\n", c&&d);
+	// 8 is >0 so 8 is true/1 in boolean
+	// 1 is also >0 so it is true in boolean 
+	// so overall output is 1
+}
