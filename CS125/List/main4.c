@@ -43,7 +43,7 @@ int main() {
     // 3. Problem 62 logic accessed directly via the single avyuh
     // lists->vector is L1, lists->next->vector is L2
     sadish *ptr1 = lists->vector;
-    sadish *ptr2 = lists->next->vector;
+    //sadish *ptr2 = lists->next->vector;
 
     while (ptr1 != NULL && ptr1->next != NULL) {
         double query = ptr1->next->data;
